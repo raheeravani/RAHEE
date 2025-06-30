@@ -1,0 +1,239 @@
+Task 1:
+-While
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 1;
+    clrscr();
+    while(i <= 10) {
+        printf(" %d", i);
+        i++;
+    }
+    getch();
+}
+
+
+-Do while
+ 
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 1;
+    clrscr();
+    do {
+        printf(" %d", i);
+        i++;
+    } while(i <= 10);
+    getch();
+}
+
+-for
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i;
+    clrscr();
+    for(i = 1; i <= 10; i++) {
+        printf(" %d", i);
+    }
+    getch();
+}
+
+
+Task 2:
+-While loop 
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 2;
+    clrscr();
+    while(i <= 20) {
+        printf(" %d", i);
+        i += 2;
+    }
+    getch();
+}
+
+-Do while 
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 2;
+    clrscr();
+    do {
+        printf(" %d", i);
+        i += 2;
+    } while(i <= 20);
+    getch();
+}
+
+
+-For loop
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i;
+    clrscr();
+    for(i = 2; i <= 20; i += 2) {
+        printf(" %d", i);
+    }
+    getch();
+}
+
+
+
+Task 3
+-While
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 1, sum = 0;
+    clrscr();
+    while(i <= 10) {
+        sum = sum + i;
+        i++;
+    }
+    printf("Sum = %d", sum);
+    getch();
+}
+
+-Do while
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 1, sum = 0;
+    clrscr();
+    do {
+        sum = sum + i;
+        i++;
+    } while(i <= 10);
+    printf("Sum = %d", sum);
+    getch();
+}
+
+-For loop
+ 
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i, sum = 0;
+    clrscr();
+    for(i = 1; i <= 10; i++) {
+        sum = sum + i;
+    }
+    printf("Sum = %d", sum);
+    getch();
+}
+
+
+
+
+Task 4
+-While
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 10;
+    clrscr();
+    while(i >= 1) {
+        printf(" %d", i);
+        i--;
+    }
+    getch();
+}
+
+-Do while 
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i = 10;
+    clrscr();
+    do {
+        printf(" %d", i);
+        i--;
+    } while(i >= 1);
+    getch();
+}
+
+-For 
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i;
+    clrscr();
+    for(i = 10; i >= 1; i--) {
+        printf(" %d", i);
+    }
+    getch();
+}
+
+
+Task 6
+-While 
+
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int num = 7, i = 2, isPrime = 1;
+    clrscr();
+    while(i <= num / 2) {
+        if(num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+        i++;
+    }
+    if(isPrime == 1)
+        printf("%d is Prime", num);
+    else
+        printf("%d is Not Prime", num);
+    getch();
+}
+
+
+-For
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int num = 7, i, isPrime = 1;
+    clrscr();
+    for(i = 2; i <= num / 2; i++) {
+        if(num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+    if(isPrime == 1)
+        printf("%d is Prime", num);
+    else
+        printf("%d is Not Prime", num);
+    getch();
+}
+
+-Do while 
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int num = 7, i = 2, isPrime = 1;
+    clrscr();
+    do {
+        if(num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+        i++;
+    } while(i <= num / 2);
+    
+    if(isPrime == 1)
+        printf("%d is Prime", num);
+    else
+        printf("%d is Not Prime", num);
+    getch();
+}
